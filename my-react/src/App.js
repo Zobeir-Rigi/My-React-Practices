@@ -1,14 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 
-const Greating = () =>{
-  const hello = "hi"
-  console.log({hello});
-  return  <h1>hello </h1> ;
-} 
+// const Greating = () =>{
+//   const hello = "Hi"
+//   return  <h1>{hello} </h1> ;
+// } ; 
+  const hello = "Hi" ;
+
+
+const Mentors = () =>{
+  const mentor =[`ali` , `zo` , `ash`] ;
+   return mentor.map(el =>
+    <p> {hello +` ` + el}</p>
+    // <p>{Greating()+`  `+ el}</p>
+    )
+};
+
 function App() {
   return (
-   <Greating />
+    <div>
+   {/* <Greating /> */}
+   <Mentors />
+   </div>
   );
 }
 
