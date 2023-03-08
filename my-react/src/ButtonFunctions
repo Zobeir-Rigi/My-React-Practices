@@ -1,0 +1,14 @@
+
+const ClickMe = () => {
+  console.log("I got Clicked");
+};
+
+const Download = () => {
+  console.log("Download ME ...");
+};
+
+const Subscribe = () => {
+  console.log("Subscrib Me ...");
+};
+
+export { ClickMe, Download, Subscribe };
