@@ -1,6 +1,7 @@
 import "./App.css";
 import Button from "./button";
 import Mentors from "./Mentors";
+import MartianPhotoFetcher from "./fetch";
 // import { ClickMe, Download, Subscribe } from "./ButtonFunctions";
 
 
@@ -17,6 +18,8 @@ const Subscribe = () => {
 };
 
 
+
+
 function App() {
   return (
     <div>
@@ -24,6 +27,7 @@ function App() {
       <Button text="clickMe" handleClick={ClickMe} />
       <Button text="Download" handleClick={Download} />
       <Button text="Subscribe" handleClick={Subscribe} />
+      <MartianPhotoFetcher />
     </div>
   );
 }
