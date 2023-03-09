@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 function MartianPhotoFetcher() {
   const [marsPhotoData, setMarsPhotoData] = useState(null);
 
@@ -10,7 +10,7 @@ function MartianPhotoFetcher() {
     )
       .then((res) => res.json())
       .then((data) => {
-        setMarsPhotoData(data);
+        setMarsPhotoData(data); // we update useState
       });
   }, []);
 
