@@ -4,7 +4,7 @@ import Mentors from "./Mentors";
 import MartianPhotoFetcher from "./fetch";
 // import { ClickMe, Download, Subscribe } from "./ButtonFunctions";
 import Alert from "./Alert";
-
+import Counter from "./counter";
 
 const ClickMe = () => {
   console.log("I got Clicked");
@@ -25,6 +25,7 @@ const Subscribe = () => {
 function App() {
   return (
     <div>
+      <Counter/>
       <Mentors />
       <Alert clickp={() => console.log("im an Alert !!!")} />
 
