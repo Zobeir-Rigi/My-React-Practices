@@ -3,6 +3,7 @@ import Button from "./button";
 import Mentors from "./Mentors";
 import MartianPhotoFetcher from "./fetch";
 // import { ClickMe, Download, Subscribe } from "./ButtonFunctions";
+import Alert from "./Alert";
 
 
 const ClickMe = () => {
@@ -20,10 +21,13 @@ const Subscribe = () => {
 
 
 
+
 function App() {
   return (
     <div>
       <Mentors />
+      <Alert clickp={() => console.log("im an Alert !!!")} />
+
       <Button text="clickMe" handleClick={ClickMe} />
       <Button text="Download" handleClick={Download} />
       <Button text="Subscribe" handleClick={Subscribe} />

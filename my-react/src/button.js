@@ -1,6 +1,10 @@
 const Button = ({ text, handleClick}) => {
     console.log(handleClick)
-  return <button onClick={handleClick}>{text}</button>;
+  return(
+      <button type="button" class="btn btn-info" onClick={handleClick}>{text} </button>
+
+  );
+  
 };
 
 
