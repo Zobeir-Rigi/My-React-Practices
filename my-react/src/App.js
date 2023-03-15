@@ -5,6 +5,7 @@ import MartianPhotoFetcher from "./fetch";
 // import { ClickMe, Download, Subscribe } from "./ButtonFunctions";
 import Alert from "./Alert";
 import Counter from "./counter";
+import Highlighter from "./HighLighter"
 
 const ClickMe = () => {
   console.log("I got Clicked");
@@ -25,7 +26,10 @@ const Subscribe = () => {
 function App() {
   return (
     <div>
-      <Counter/>
+      <p>
+        Some text with a <Highlighter word="highlighted" color="red" /> word
+      </p>
+      <Counter />
       <Mentors />
       <Alert clickp={() => console.log("im an Alert !!!")} />
 
