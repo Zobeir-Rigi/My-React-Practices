@@ -28,8 +28,8 @@ const Subscribe = () => {
 function App() {
   return (
     <div>
-    <Ternary />
-    <Loop />
+      <Ternary  />
+      <Loop />
       <p>
         Some text with a <Highlighter word="highlighted" color="red" /> word
       </p>
