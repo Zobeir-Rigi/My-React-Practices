@@ -6,6 +6,8 @@ import MartianPhotoFetcher from "./fetch";
 import Alert from "./Alert";
 import Counter from "./counter";
 import Highlighter from "./HighLighter"
+import Ternary from "./Ternary";
+import Loop from "./Loop";
 
 const ClickMe = () => {
   console.log("I got Clicked");
@@ -26,6 +28,8 @@ const Subscribe = () => {
 function App() {
   return (
     <div>
+    <Ternary />
+    <Loop />
       <p>
         Some text with a <Highlighter word="highlighted" color="red" /> word
       </p>
