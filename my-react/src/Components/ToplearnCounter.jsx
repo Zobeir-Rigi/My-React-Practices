@@ -1,17 +1,30 @@
-import { Component } from "react";
-class ToplearnCounter extends Component{
-    render(){
-        return <p>Counter: {Math.floor(Math.random() * 10)}</p>;
-    }
-}
+// import { Component } from "react";
+// class ToplearnCounter extends Component{
+    
+//     render(){
+//         console.log(this.props);
+//         const {count} = this.props;
+//         return (
+//         <fragment>
+//             <p>Counter: {Math.floor(Math.random() * 10)}</p>
+//                     <p>Counter: {count}</p>
+//             </fragment>
+//             )
 
-export default ToplearnCounter ;
+//     }
+// }
 
-
-
-
-
-// const ToplearnCounter = () => {
-//  return <p>Counter: {Math.floor( Math.random()*10)}</p> ;
-// };
 // export default ToplearnCounter ;
+
+
+const ToplearnCounter = ({count}) => {
+    console.log(count);
+    
+ return (
+ <fragment>
+     <p>Counter: {Math.floor( Math.random()*10)}</p>
+     <p>Counter: {count}</p>
+ </fragment>
+ );
+};
+export default ToplearnCounter ;
