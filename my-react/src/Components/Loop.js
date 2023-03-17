@@ -17,12 +17,12 @@ const students = [
 
 const Loop = () => {
   return (
-    <fragment className="center">
+    <div className="center">
       <h2>Loop</h2>
-      {students.map((stud) => (
-        <li>{stud.firstName}</li>
+      {students.map((stud,index) => (
+        <li key={index}>{stud.firstName}</li>
       ))}
-    </fragment>
+    </div>
   );
 };
 

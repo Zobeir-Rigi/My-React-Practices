@@ -16,15 +16,18 @@
 
 // export default ToplearnCounter ;
 
-
-const ToplearnCounter = ({count}) => {
-    console.log(count);
+import { Fragment } from "react";
+const ToplearnCounter = (props) => {
+    console.log(props);
     
  return (
- <fragment>
-     <p>Counter: {Math.floor( Math.random()*10)}</p>
-     <p>Counter: {count}</p>
- </fragment>
+   <Fragment>
+     <p>Counter: {Math.floor(Math.random() * 10)}</p>
+     <p>Counter: {props.count}</p>
+     <p>Arr: {props.myArr}</p>
+     <p>Login status: {props.islogged ? "True" : "False"}</p>
+     <p>Login status2: {props.islogged && "True" }</p>
+   </Fragment>
  );
 };
 export default ToplearnCounter ;
