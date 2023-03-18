@@ -24,8 +24,8 @@ const Subscribe = () => {
 function App() {
   return (
     <div>
-    <ToplearnCounter count={4+7}/>
-    <ToplearnCounter myArr={[1,2,3,4,5]} islogged={true} />
+      <ToplearnCounter count={4 + 7} myArr={[1, 2, 3, 4, 5]} islogged={true} />
+      <ToplearnCounter />
       <Ternary />
       <Loop />
       <p>
