@@ -31,8 +31,8 @@ function App() {
       <p>
         Some text with a <Highlighter word="highlighted" color="red" /> word
       </p>
-      <Counter />
-      <Mentors />
+      <Counter/>
+      <Mentors >this is my mentor</Mentors>
       <Alert clickp={() => console.log("im an Alert !!!")} />
       <Button text="clickMe" handleClick={ClickMe} />
       <Button text="Download" handleClick={Download} />
