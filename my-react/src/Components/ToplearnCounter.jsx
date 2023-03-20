@@ -30,4 +30,7 @@ const ToplearnCounter = (props) => {
    </Fragment>
  );
 };
+ToplearnCounter.defaultProps={
+  count:150
+}
 export default ToplearnCounter ;
